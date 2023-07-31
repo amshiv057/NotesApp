@@ -42,7 +42,7 @@ export default function App() {
 
   React.useEffect(() => {
     const timeoutId = setTimeout(() => {
-      if (tempNoteText !== currentNote.body) {
+      if (tempNoteText !== currentNote) {
         updateNote(tempNoteText);
       }
     }, 500);
